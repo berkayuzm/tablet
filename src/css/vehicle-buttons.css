@@ -1,0 +1,20 @@
+.sidebar .vehicle-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: auto;
+
+}
+
+.sidebar .vehicle-buttons i {
+    font-size: 24px;
+}
+
+.sidebar .vehicle-buttons .manual-drive-button {
+    margin-bottom: -10px;
+}
+
+.sidebar .vehicle-buttons .focus-button {
+    margin-bottom: -10px;
+}

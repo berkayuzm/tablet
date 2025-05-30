@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #e8e9ec;
+    overflow: hidden;
+    background-color: rgba(3, 3, 19, .91);
+    margin: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow: hidden ;
+    margin: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    color: white;
+    font-size: 24px;
+    z-index: 1000;
+  }
+  
+  #progress-text {
+    color: white;
+  }
+  
+ #info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    z-index: 1001; 
+  }
+  #loading-spinner {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 8px solid transparent;
+    border-top-color: #3498db; /* İlk renk */
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #progress-text {
+    color: white;
+    font-size: 20px;
+  }
+
+
+  #camera-reset-button {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; 
+  }
+  
+  #camera-reset-button:hover {
+    background-color: #0056b3;
+  }
+  .connection-waiting-container {
+    height: 100vh;
+    width: 100%;
+    z-index: 60;
+    position: absolute;
+    top: 0;
+    display: none;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .connection-waiting .cant-connection-title {
+    display: none;
+  }
+  .connection-waiting .cant-connection-waiting-mini {
+    display: none;
+  }
+  #ip-change-modal{
+    z-index: 100;
+  }
+  .symphony-message{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #030313;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    transform: translate(-50%, -50%);
+  }

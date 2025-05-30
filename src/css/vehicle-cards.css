@@ -1,0 +1,41 @@
+.sidebar .vehicle-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    gap: 7px;
+}
+
+.sidebar .vehicle-cards .vehicle-card {
+    background: #ffffff0f;
+    width: 49%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+    border: 1px solid #ffffff0f;
+}
+
+.sidebar .vehicle-cards .vehicle-card .icon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .vehicle-cards .vehicle-card .icon i {
+    font-size: 40px;
+}
+
+.sidebar .vehicle-cards .vehicle-card .text {
+    font-size: 12px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .vehicle-cards .vehicle-card .text span:first-child {
+    font-weight: 450;
+}

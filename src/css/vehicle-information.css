@@ -1,0 +1,41 @@
+.sidebar .vehicle-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background: #ffffff0f;
+    border: 1px solid #ffffff0f;
+    gap: 20px;
+    
+}
+
+
+
+
+.sidebar .vehicle-information span {
+    display:flex;
+    align-items:flex;
+    gap: 8px;
+    font-weight: 650;     
+    flex-direction: column;
+     
+}
+
+.sidebar.vehicle-information {
+    color: white;
+
+}
+
+
+
+.sidebar .vehicle-information p {
+    font-weight: 600;  
+    width: 15px;
+    height: 15px;
+    background-color: rgb(25, 209, 25);
+    border-radius: 50%;    
+}
+
+
