@@ -1,4 +1,4 @@
-var vehicle_circle = $(".sidebar .vehicle-information span p");
+var vehicle_circle = $(".sidebar .vehicle-information p");
 var cancel_mission = $(".vehicle-action-button.cancel-mission-button");
 var mission_state_label = $("#mission_state_label");
 missionsCnt=0;//Global değişken tanımlaması(değişken window objesine bağlanıyor)
@@ -12,8 +12,9 @@ function rosConnect() {
 
 $(document).ready(function () {
     console.log("Document ready A...");
-    rosConnect();
 
+    rosConnect();
+    console.log("rosgeldi=>", ros);
     if (localStorage.getItem('boyut') == 'false') {
         init();
         $("#open_rviz").removeClass('active');
@@ -50,14 +51,14 @@ var login = false;
         mission_state_label.html("Kapalı / 0");
         $("#stop_symphony").hide();
         $("#start_symphony").show();
-        vehicle_circle.css("background-color", "red");
+        vehicle_circle.css("background-color", "#B30900");
     }
     else {
         $("#device_label").html("Beklemede");
         $(".autonomous-status").css("background-color", "#c7c700");
         $(".sidebar .vehicle-information p").css("background-color","#8A0700")
         $(".connection-waiting-container").css("display", "none");
-        vehicle_circle.css("background-color", "yellow");
+        vehicle_circle.css("background-color", "#279C27");
         if (login == false) {
         if (topicMissions == null) {
             var topicMissions = new ROSLIB.Topic({
