@@ -1,0 +1,343 @@
+.remote-html {
+  height: 100%;
+  background: -webkit-linear-gradient(15deg, #000 50%, rgb(53, 53, 53) 50%);
+  margin: 0 auto;
+  padding: 20px 15px 15px 15px;
+  border: 8px solid #f1f1f1;
+  /* min-height: 870px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+  height: 671px;
+}
+
+.remote-arcelik-logo {
+  width: 300px;
+}
+
+.remote-arcelik-logo-container {
+  max-width: 300px !important;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.remote-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-shadow: 1px 1px 15px lightblue;
+}
+
+.remote-row label {
+  color: white;
+  font-size: 30px;
+}
+
+.remote-row .remote-buttons {
+}
+
+.remote-row .remote-buttons button {
+  background: transparent;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  margin-left: 15px;
+  transition: all 0.1s;
+}
+
+.remote-row .remote-buttons button img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.remote-row .remote-buttons button:hover {
+  background: #fff;
+  color: black;
+}
+
+.remote-row .remote-buttons button:active {
+  transform: scale(0.95);
+}
+
+.remote-row .remote-buttons button:hover img {
+  filter: brightness(0);
+}
+
+#popupclose {
+  color: white;
+  float: right;
+  border-radius: 50%;
+  font-weight: 600;
+  margin-bottom: 5px;
+  cursor: pointer;
+  z-index: 4;
+  width: 25px;
+  height: 25px;
+  border: 5px solid #de4141;
+  background: #de4141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#popupclose:hover {
+  background-color: #e95a5a;
+  border: 5px solid #e95a5a;
+}
+
+#popupclose img {
+  filter: brightness(0) invert(1);
+}
+
+.remote-control {
+  position: relative;
+  height: 230px;
+  width: 230px;
+  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.remote-control img {
+  width: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+
+.remote-control img:active {
+  transform: scale(1.6);
+}
+
+.remote-control .remote-up {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  padding: 30px 0;
+  background-image: url("../images/img/remote-control/arrow-up.png");
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  transition: all 0.1s;
+}
+
+.remote-control .remote-up:hover {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 2px #fff);
+}
+.remote-control .remote-up:active {
+  height: 60px;
+  width: 60px;
+}
+
+.remote-control .remote-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  padding: 30px 0;
+  background-image: url("../images/img/remote-control/arrow-up.png");
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  transition: all 0.1s;
+}
+
+.remote-control .remote-down:hover {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 2px #fff);
+}
+.remote-control .remote-down:active {
+  height: 60px;
+  width: 60px;
+}
+.remote-control .remote-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg);
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  padding: 0 30px;
+  background-image: url("../images/img/remote-control/arrow-up.png");
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  transition: all 0.1s;
+}
+
+.remote-control .remote-left:hover {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 2px #fff);
+}
+.remote-control .remote-left:active {
+  height: 60px;
+  width: 60px;
+}
+
+.remote-control .remote-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  padding: 0 30px;
+  background-image: url("../images/img/remote-control/arrow-up.png");
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  transition: all 0.1s;
+}
+
+.remote-control .remote-right:hover {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 2px #fff);
+}
+.remote-control .remote-right:active {
+  height: 60px;
+  width: 60px;
+}
+
+.remote-control .remote-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 1px #fff);
+  transition: all 0.1s;
+}
+
+.remote-control .remote-center:hover {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 2px #fff);
+}
+
+.remote-text {
+  font-size: 32px;
+  color: #575757;
+  text-transform: lowercase;
+  margin-top: 20px;
+  letter-spacing: -1.5px;
+}
+
+.remote-logo {
+  color: #0072bd;
+}
+
+.rotate-n315 {
+  transform: rotate(315deg);
+}
+
+.rotate-n9 {
+  transform: rotate(90deg);
+}
+
+.rotate-n18 {
+  transform: rotate(180deg);
+}
+
+.rotate-n27 {
+  transform: rotate(270deg);
+}
+
+.rotate-n135 {
+  transform: rotate(135deg);
+}
+
+.rotate-n36 {
+  transform: rotate(360deg);
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  left: 180px;
+  transform: translateY(-50%);
+  background: transparent;
+  z-index: 999;
+  top: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .remote-html {
+    width: 100vw;
+    padding: 5px 20px;
+    border: 0;
+    height: 100vh;
+    border-radius: 0;
+    /* height: auto; */
+  }
+
+  .remote-html .row-control {
+  }
+
+  .remote-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #popup {
+    top: 0 !important;
+    left: 0;
+    transform: translateY(0);
+  }
+
+  .remote-text {
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .remote-control {
+    height: 300px;
+    width: 300px;
+  }
+
+  .remote-control img {
+    width: 40px !important;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.1s;
+  }
+
+  .agvPanelMapButtons {
+    width: 100% !important;
+    margin-bottom: 5px;
+  }
+
+  .agvCardButtons {
+    width: 100%;
+  }
+}
+#remote_button {
+  position: absolute;
+  bottom: 43px;
+  right: 10px;
+  width: 130px;
+  height: 30px;
+  border: 2px solid #d4d4d4;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 11px;
+}

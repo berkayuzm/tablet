@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./css/map.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/alerts.css">
+    <link rel="stylesheet" href="./css/remote.css" />
+
     <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.min.css">
     <script type="importmap-shim">
       {
@@ -505,6 +507,89 @@
     <div id="canvas-container">
         <canvas class="webgl"></canvas>
     </div> -->
+    <div oncontextmenu="return false;">
+    <div id="popup" >
+    <div class="popupcontent">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 px-0">
+            <div class="remote-html">
+              <div class="row">
+                <div class="col-12 remote-arcelik-logo-container">
+                  <img src="../images/img/symphonylogo.png" class="remote-arcelik-logo img-fluid" />
+                </div>
+              </div>
+             
+              <div class="row mb-3 popup-close">
+                <div class="col-12" style="position: absolute; top: 5%; right: 5%">
+                  <button id="popupclose">
+                    <img src="../images/img/remote-control/close.png" width="15px" />
+                  </button>
+                </div>
+              </div>
+              <div class="row row-control mt-5">
+                <div class="col-12 remote-row px-5">
+                 
+                  <!-- <label>Pim</label> -->
+                  <!-- <div class="remote-buttons">
+                    <button id="down_button_lift">
+                      <img src="img/remote-control/arrow.png" class="img-fluid rotate-n18" />
+                    </button>
+                    <button id="up_button_lift">
+                      <img src="img/remote-control/arrow.png" class="img-fluid rotate-n36" />
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+              <div class="row row-control">
+                <div class="col-12">
+                  <div class="remote-control" >
+
+                    <div class="remote-up" id="up_button_arrow">
+                      <!-- <img src="img/remote-control/arrow-up.png"  class="img-fluid " /> -->
+                    </div>
+                    <div class="remote-down" id="down_button_arrow" >
+                      <!-- <img src="img/remote-control/arrow-up.png"  class="img-fluid " /> -->
+                    </div>
+                    <div class="remote-center" id="center_button">
+                      <img src="../images/img/remote-control/circle.png"  class="img-fluid " />
+                    </div>
+                    <div class="remote-left" id="left_button_arrow">
+                      <!-- <img src="img/remote-control/arrow-up.png"  class="img-fluid " id="remote-controller-image-left"/> -->
+                    </div>
+                    <div class="remote-right" id="right_button_arrow">
+                      <!-- <img src="img/remote-control/arrow-up.png" class="img-fluid remote-controller-image" id="remote-controller-image-right"/> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <button id="resetButton" style="
+                      margin: 10px auto;
+                      border: 2px solid white;
+                      max-width: 150px;
+                      background-color: transparent;
+                      color: white;
+                      border-radius: 5px;
+                    ">
+                  Reset
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-12 remote-text text-center">
+                  <span class="remote-logo">Symphony</span>remote
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+    <div id="map-buttons">
+      <button id="kumanda">Kumanda</button>
+    </div>
     <div class="connection-waiting-container">
     <div class="relative connection-waiting" id="no-connection-modal" >
         <div class="fixed  inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
@@ -571,6 +656,7 @@
     <script type="text/javascript" src="./js/Other/checkConnection.js"></script> 
     <script type="text/javascript" src="./js/Other/generalFunctions.js"></script> 
     <script type="text/javascript" src="./js/Other/loadPointCloud.js"></script> 
+    <script type="text/javascript" src="./js/main.js"></script> 
   
 
   
