@@ -44,7 +44,7 @@ function remoteControllerConnection(ros) {
     console.log("flksdajşflkjşd")
     var teleopvelforward_msg = new ROSLIB.Message({
       linear: {
-        x: 200,
+        x: 3,
         y: 0,
         z: 0,
       },
@@ -59,7 +59,7 @@ function remoteControllerConnection(ros) {
   $("#down_button_arrow").click(function () {
     var teleopvelbackward_msg = new ROSLIB.Message({
       linear: {
-        x: -200,
+        x: -3,
         y: 0,
         z: 0,
       },
@@ -82,7 +82,7 @@ function remoteControllerConnection(ros) {
       angular: {
         x: 0,
         y: 0,
-        z: -100,
+        z: -5,
       },
     });
     _timeoutId = setInterval(function() {
@@ -103,7 +103,7 @@ function remoteControllerConnection(ros) {
       angular: {
         x: 0,
         y: 0,
-        z: 100,
+        z: 5,
       },
     });
     _timeoutId = setInterval(function() {

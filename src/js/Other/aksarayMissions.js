@@ -70,6 +70,19 @@ function brushDown() {
   
     brush_down.publish(integerData);
   }
+  function brushUp() {
+  console.log("Brush down function called");
+    var brush_down = new ROSLIB.Topic({
+      ros: ros,
+      name: "/io_1/outputs/brush_down",
+      messageType: "std_msgs/Int32",
+    });
+    var integerData = new ROSLIB.Message({
+      data: 0,
+    });
+  
+    brush_down.publish(integerData);
+  }
   function brushMotor() {
     console.log("Brush motor function called");
     var brush_motor = new ROSLIB.Topic({
@@ -79,6 +92,19 @@ function brushDown() {
     });
     var integerData = new ROSLIB.Message({
       data: 1,
+    });
+  
+    brush_motor.publish(integerData);
+  }
+  function stopMotor() {
+    console.log("Brush motor function called");
+    var brush_motor = new ROSLIB.Topic({
+      ros: ros,
+      name: "/io_1/outputs/brush_motor",
+      messageType: "std_msgs/Int32",
+    });
+    var integerData = new ROSLIB.Message({
+      data: 0,
     });
   
     brush_motor.publish(integerData);
