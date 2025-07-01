@@ -57,18 +57,31 @@
 //   localStorage.setItem("activeMissionCount",activeMissionCount)
 // }
 //Boş arabalar hazır
-function readyEmptyCars() {
-    var ready_empty_cars = new ROSLIB.Topic({
+function brushDown() {
+  console.log("Brush down function called");
+    var brush_down = new ROSLIB.Topic({
       ros: ros,
-      name: "/mission/item_count_waiting",
+      name: "/io_1/outputs/brush_down",
       messageType: "std_msgs/Int32",
     });
     var integerData = new ROSLIB.Message({
       data: 1,
     });
   
-    ready_empty_cars.publish(integerData);
-    console.log("click");
+    brush_down.publish(integerData);
+  }
+  function brushMotor() {
+    console.log("Brush motor function called");
+    var brush_motor = new ROSLIB.Topic({
+      ros: ros,
+      name: "/io_1/outputs/brush_motor",
+      messageType: "std_msgs/Int32",
+    });
+    var integerData = new ROSLIB.Message({
+      data: 1,
+    });
+  
+    brush_motor.publish(integerData);
   }
   // function takeEmptyCarsInside() {
   //   var request_mission_cmd_drop = createMission(6, "MOVE_TO_ZONE", "", "zone_3");
